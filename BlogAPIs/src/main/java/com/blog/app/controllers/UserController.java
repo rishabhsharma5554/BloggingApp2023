@@ -1,7 +1,6 @@
 package com.blog.app.controllers;
 
 import java.util.List;
-import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -15,13 +14,15 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.blog.app.payloads.APIResponse;
 import com.blog.app.payloads.UserDTO;
 import com.blog.app.repos.UserRepo;
 import com.blog.app.services.UserService;
 
 @RestController
 @RequestMapping("/api/users")
-public class UserController {
+public class UserController 
+{
 	
 	@Autowired
 	private UserService userService;
@@ -47,10 +48,10 @@ public class UserController {
 	
 	//delete users using id
 	@DeleteMapping("/{id}")
-	public ResponseEntity<?> deleteUser(@PathVariable("id") Integer id)
+	public ResponseEntity<APIResponse> deleteUser(@PathVariable("id") Integer id)
 	{
 		this.userService.deleteUser(id);
-		return new ResponseEntity<>(Map.of("message","deleted."),HttpStatus.OK);
+		return new ResponseEntity<>(new APIResponse("User Deleted Succesfully", true),HttpStatus.OK);
 	}
 	
 	//get all user

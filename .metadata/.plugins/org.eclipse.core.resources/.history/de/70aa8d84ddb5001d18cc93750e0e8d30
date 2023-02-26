@@ -1,0 +1,35 @@
+package com.blog.app.exceptions;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
+import com.blog.app.payloads.APIResponse;
+
+@RestControllerAdvice
+public class GlobalExceptionHandler {
+
+	// will give us the current time and date
+    static LocalDateTime current = LocalDateTime.now();
+    // to print in a particular format
+    static DateTimeFormatter format = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss"); 
+	
+	@ExceptionHandler(ResourceNotFoundException.class)
+	public ResponseEntity<APIResponse> resourceNotFoundException(ResourceNotFoundException e)
+	{
+		String errorMsg = e.getMessage();
+		String formatedDateTime = current.format(format); 
+		return new ResponseEntity<>(new APIResponse(errorMsg,false,formatedDateTime),HttpStatus.INTERNAL_SERVER_ERROR);
+	}
+	
+	
+	@ExceptionHandler
+	public ResponseEntity<APIResponse> methodArgumentTypeMismatchException(Exception ex)
+	{
+		String errorMsg = ex.getMessage();
+		return new ResponseEntity<>(new APIResponse(errorMsg,false,LocalDateTime.now()),HttpStatus.INTERNAL_SERVER_ERROR);		
+	}
+}

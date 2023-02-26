@@ -420,3 +420,162 @@
 2023-02-26 16:07:48,068 [Worker-72: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
 2023-02-26 16:07:48,081 [Worker-72: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
 2023-02-26 16:07:48,083 [Worker-72: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\backup\personal-eclipse-workspaces\Blogging-app-2023\BlogAPIs\src\test\resources
+2023-02-26 17:08:43,801 [Worker-75: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-26 17:08:43,847 [Worker-75: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-26 17:08:43,852 [Worker-75: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\backup\personal-eclipse-workspaces\Blogging-app-2023\BlogAPIs\src\test\resources
+2023-02-26 17:08:50,131 [Worker-77: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-26 17:08:50,285 [Worker-77: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-26 17:08:50,288 [Worker-77: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\backup\personal-eclipse-workspaces\Blogging-app-2023\BlogAPIs\src\test\resources
+2023-02-26 17:09:06,998 [Worker-75: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-26 17:09:07,139 [Worker-75: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-26 17:09:07,142 [Worker-75: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\backup\personal-eclipse-workspaces\Blogging-app-2023\BlogAPIs\src\test\resources
+2023-02-26 17:17:21,808 [Worker-75: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-26 17:17:21,841 [Worker-75: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-26 17:17:21,845 [Worker-75: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\backup\personal-eclipse-workspaces\Blogging-app-2023\BlogAPIs\src\test\resources
+2023-02-26 17:18:39,916 [Worker-76: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-26 17:18:39,925 [Worker-76: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-26 17:18:39,927 [Worker-76: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\backup\personal-eclipse-workspaces\Blogging-app-2023\BlogAPIs\src\test\resources
+2023-02-26 17:38:18,433 [Worker-86: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-26 17:38:18,524 [Worker-86: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-26 17:38:18,526 [Worker-86: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\backup\personal-eclipse-workspaces\Blogging-app-2023\BlogAPIs\src\test\resources
+2023-02-26 17:39:12,725 [Worker-87: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-26 17:39:12,743 [Worker-87: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-26 17:39:12,745 [Worker-87: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\backup\personal-eclipse-workspaces\Blogging-app-2023\BlogAPIs\src\test\resources
+2023-02-26 17:39:34,362 [Worker-88: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-26 17:39:34,406 [Worker-88: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-26 17:39:34,424 [Worker-88: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\backup\personal-eclipse-workspaces\Blogging-app-2023\BlogAPIs\src\test\resources
+2023-02-26 17:41:15,387 [Worker-85: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-26 17:41:15,433 [Worker-85: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-26 17:41:15,436 [Worker-85: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\backup\personal-eclipse-workspaces\Blogging-app-2023\BlogAPIs\src\test\resources
+2023-02-26 17:41:39,649 [Worker-88: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-26 17:41:39,676 [Worker-88: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-26 17:41:39,678 [Worker-88: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\backup\personal-eclipse-workspaces\Blogging-app-2023\BlogAPIs\src\test\resources
+2023-02-26 17:42:20,879 [Worker-88: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-26 17:42:20,889 [Worker-88: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-26 17:42:20,892 [Worker-88: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\backup\personal-eclipse-workspaces\Blogging-app-2023\BlogAPIs\src\test\resources
+2023-02-26 17:44:12,212 [Worker-85: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-26 17:44:12,222 [Worker-85: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-26 17:44:12,225 [Worker-85: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\backup\personal-eclipse-workspaces\Blogging-app-2023\BlogAPIs\src\test\resources
+2023-02-26 17:44:21,929 [Worker-89: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-26 17:44:21,939 [Worker-89: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-26 17:44:21,941 [Worker-89: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\backup\personal-eclipse-workspaces\Blogging-app-2023\BlogAPIs\src\test\resources
+2023-02-26 17:44:25,608 [Worker-90: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-26 17:44:25,622 [Worker-90: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-26 17:44:25,624 [Worker-90: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\backup\personal-eclipse-workspaces\Blogging-app-2023\BlogAPIs\src\test\resources
+2023-02-26 17:47:30,337 [Worker-90: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-26 17:47:30,348 [Worker-90: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-26 17:47:30,350 [Worker-90: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\backup\personal-eclipse-workspaces\Blogging-app-2023\BlogAPIs\src\test\resources
+2023-02-26 19:06:48,580 [Worker-93: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-26 19:06:48,634 [Worker-93: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-26 19:06:48,658 [Worker-93: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\backup\personal-eclipse-workspaces\Blogging-app-2023\BlogAPIs\src\test\resources
+2023-02-26 19:07:13,246 [Worker-92: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-26 19:07:13,286 [Worker-92: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-26 19:07:13,289 [Worker-92: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\backup\personal-eclipse-workspaces\Blogging-app-2023\BlogAPIs\src\test\resources
+2023-02-26 19:12:14,308 [Worker-89: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-26 19:12:14,352 [Worker-89: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-26 19:12:14,355 [Worker-89: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\backup\personal-eclipse-workspaces\Blogging-app-2023\BlogAPIs\src\test\resources
+2023-02-26 19:13:46,335 [Worker-97: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-26 19:13:46,379 [Worker-97: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-26 19:13:46,381 [Worker-97: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\backup\personal-eclipse-workspaces\Blogging-app-2023\BlogAPIs\src\test\resources
+2023-02-26 19:16:10,572 [Worker-96: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-26 19:16:10,627 [Worker-96: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-26 19:16:10,631 [Worker-96: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\backup\personal-eclipse-workspaces\Blogging-app-2023\BlogAPIs\src\test\resources
+2023-02-26 19:16:12,967 [Worker-96: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-26 19:16:13,000 [Worker-96: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-26 19:16:13,003 [Worker-96: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\backup\personal-eclipse-workspaces\Blogging-app-2023\BlogAPIs\src\test\resources
+2023-02-26 19:16:52,274 [Worker-101: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-26 19:16:52,282 [Worker-101: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-26 19:16:52,284 [Worker-101: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\backup\personal-eclipse-workspaces\Blogging-app-2023\BlogAPIs\src\test\resources
+2023-02-26 19:17:47,601 [Worker-104: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-26 19:17:47,627 [Worker-104: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-26 19:17:47,629 [Worker-104: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\backup\personal-eclipse-workspaces\Blogging-app-2023\BlogAPIs\src\test\resources
+2023-02-26 19:17:57,378 [Worker-103: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-26 19:17:57,389 [Worker-103: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-26 19:17:57,392 [Worker-103: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\backup\personal-eclipse-workspaces\Blogging-app-2023\BlogAPIs\src\test\resources
+2023-02-26 19:18:10,029 [Worker-103: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-26 19:18:10,037 [Worker-103: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-26 19:18:10,039 [Worker-103: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\backup\personal-eclipse-workspaces\Blogging-app-2023\BlogAPIs\src\test\resources
+2023-02-26 19:18:23,839 [Worker-102: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-26 19:18:23,845 [Worker-102: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-26 19:18:23,848 [Worker-102: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\backup\personal-eclipse-workspaces\Blogging-app-2023\BlogAPIs\src\test\resources
+2023-02-26 19:18:39,605 [Worker-104: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-26 19:18:39,620 [Worker-104: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-26 19:18:39,624 [Worker-104: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\backup\personal-eclipse-workspaces\Blogging-app-2023\BlogAPIs\src\test\resources
+2023-02-26 19:18:54,200 [Worker-104: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-26 19:18:54,217 [Worker-104: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-26 19:18:54,221 [Worker-104: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\backup\personal-eclipse-workspaces\Blogging-app-2023\BlogAPIs\src\test\resources
+2023-02-26 19:20:32,610 [Worker-102: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-26 19:20:32,619 [Worker-102: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-26 19:20:32,622 [Worker-102: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\backup\personal-eclipse-workspaces\Blogging-app-2023\BlogAPIs\src\test\resources
+2023-02-26 19:20:55,991 [Worker-89: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-26 19:20:56,014 [Worker-89: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-26 19:20:56,017 [Worker-89: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\backup\personal-eclipse-workspaces\Blogging-app-2023\BlogAPIs\src\test\resources
+2023-02-26 19:21:08,531 [Worker-89: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-26 19:21:08,538 [Worker-89: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-26 19:21:08,541 [Worker-89: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\backup\personal-eclipse-workspaces\Blogging-app-2023\BlogAPIs\src\test\resources
+2023-02-26 19:21:11,064 [Worker-100: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-26 19:21:11,072 [Worker-100: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-26 19:21:11,075 [Worker-100: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\backup\personal-eclipse-workspaces\Blogging-app-2023\BlogAPIs\src\test\resources
+2023-02-26 19:21:15,469 [Worker-101: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-26 19:21:15,479 [Worker-101: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-26 19:21:15,481 [Worker-101: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\backup\personal-eclipse-workspaces\Blogging-app-2023\BlogAPIs\src\test\resources
+2023-02-26 19:22:19,230 [Worker-104: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-26 19:22:19,245 [Worker-104: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-26 19:22:19,251 [Worker-104: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\backup\personal-eclipse-workspaces\Blogging-app-2023\BlogAPIs\src\test\resources
+2023-02-26 19:22:34,345 [Worker-102: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-26 19:22:34,354 [Worker-102: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-26 19:22:34,356 [Worker-102: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\backup\personal-eclipse-workspaces\Blogging-app-2023\BlogAPIs\src\test\resources
+2023-02-26 19:22:40,309 [Worker-100: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-26 19:22:40,317 [Worker-100: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-26 19:22:40,319 [Worker-100: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\backup\personal-eclipse-workspaces\Blogging-app-2023\BlogAPIs\src\test\resources
+2023-02-26 19:22:45,966 [Worker-96: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-26 19:22:45,973 [Worker-96: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-26 19:22:45,975 [Worker-96: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\backup\personal-eclipse-workspaces\Blogging-app-2023\BlogAPIs\src\test\resources
+2023-02-26 19:23:30,188 [Worker-102: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-26 19:23:30,199 [Worker-102: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-26 19:23:30,202 [Worker-102: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\backup\personal-eclipse-workspaces\Blogging-app-2023\BlogAPIs\src\test\resources
+2023-02-26 19:23:34,571 [Worker-100: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-26 19:23:34,582 [Worker-100: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-26 19:23:34,585 [Worker-100: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\backup\personal-eclipse-workspaces\Blogging-app-2023\BlogAPIs\src\test\resources
+2023-02-26 19:26:30,923 [Worker-101: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-26 19:26:30,933 [Worker-101: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-26 19:26:30,935 [Worker-101: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\backup\personal-eclipse-workspaces\Blogging-app-2023\BlogAPIs\src\test\resources
+2023-02-26 19:26:33,034 [Worker-109: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-26 19:26:33,041 [Worker-109: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-26 19:26:33,042 [Worker-109: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\backup\personal-eclipse-workspaces\Blogging-app-2023\BlogAPIs\src\test\resources
+2023-02-26 19:27:14,801 [Worker-108: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-26 19:27:14,813 [Worker-108: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-26 19:27:14,817 [Worker-108: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\backup\personal-eclipse-workspaces\Blogging-app-2023\BlogAPIs\src\test\resources
+2023-02-26 19:27:34,107 [Worker-107: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-26 19:27:34,117 [Worker-107: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-26 19:27:34,118 [Worker-107: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\backup\personal-eclipse-workspaces\Blogging-app-2023\BlogAPIs\src\test\resources
+2023-02-26 19:27:38,133 [Worker-101: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-26 19:27:38,139 [Worker-101: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-26 19:27:38,141 [Worker-101: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\backup\personal-eclipse-workspaces\Blogging-app-2023\BlogAPIs\src\test\resources
+2023-02-26 19:27:55,654 [Worker-101: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-26 19:27:55,664 [Worker-101: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-26 19:27:55,666 [Worker-101: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\backup\personal-eclipse-workspaces\Blogging-app-2023\BlogAPIs\src\test\resources
+2023-02-26 19:29:11,724 [Worker-101: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-26 19:29:11,734 [Worker-101: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-26 19:29:11,737 [Worker-101: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\backup\personal-eclipse-workspaces\Blogging-app-2023\BlogAPIs\src\test\resources
+2023-02-26 19:29:17,391 [Worker-109: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-26 19:29:17,401 [Worker-109: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-26 19:29:17,403 [Worker-109: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\backup\personal-eclipse-workspaces\Blogging-app-2023\BlogAPIs\src\test\resources
+2023-02-26 19:31:13,865 [Worker-109: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-26 19:31:13,878 [Worker-109: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-26 19:31:13,882 [Worker-109: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\backup\personal-eclipse-workspaces\Blogging-app-2023\BlogAPIs\src\test\resources
+2023-02-26 19:31:19,888 [Worker-108: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-26 19:31:19,896 [Worker-108: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-26 19:31:19,898 [Worker-108: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\backup\personal-eclipse-workspaces\Blogging-app-2023\BlogAPIs\src\test\resources
+2023-02-26 19:31:38,708 [Worker-106: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-26 19:31:38,716 [Worker-106: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-26 19:31:38,717 [Worker-106: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\backup\personal-eclipse-workspaces\Blogging-app-2023\BlogAPIs\src\test\resources
+2023-02-26 19:32:33,995 [Worker-110: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-26 19:32:34,004 [Worker-110: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-26 19:32:34,005 [Worker-110: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\backup\personal-eclipse-workspaces\Blogging-app-2023\BlogAPIs\src\test\resources
+2023-02-26 19:32:37,760 [Worker-100: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-26 19:32:37,770 [Worker-100: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-26 19:32:37,772 [Worker-100: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\backup\personal-eclipse-workspaces\Blogging-app-2023\BlogAPIs\src\test\resources
+2023-02-26 19:32:44,262 [Worker-106: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-26 19:32:44,272 [Worker-106: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-26 19:32:44,275 [Worker-106: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\backup\personal-eclipse-workspaces\Blogging-app-2023\BlogAPIs\src\test\resources
