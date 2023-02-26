@@ -1,0 +1,45 @@
+package com.blog.app.controllers;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.blog.app.payloads.UserDTO;
+import com.blog.app.repos.UserRepo;
+import com.blog.app.services.UserService;
+
+@RestController
+@RequestMapping("/api/users")
+public class UserController {
+	
+	@Autowired
+	private UserService userService;
+	
+	@Autowired
+	private UserRepo userRepo;
+	
+	//post
+	@PostMapping("/")
+	public ResponseEntity<UserDTO> createUser(@RequestBody UserDTO userDTO)
+	{
+		UserDTO createUser = this.userService.createUser(userDTO);
+		return new ResponseEntity<>(createUser,HttpStatus.CREATED);
+	}
+
+	//put
+	//delete
+	//get all
+	public ResponseEntity<List<UserDTO>> getAllUsers()
+	{
+		List<UserDTO> allUsers = this.userService.getAllUsers();
+		return new ResponseEntity<List<UserDTO>>(allUsers,HttpStatus.OK);
+	}
+	//get specific
+	
+}

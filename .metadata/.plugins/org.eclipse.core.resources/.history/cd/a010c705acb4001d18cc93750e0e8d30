@@ -1,0 +1,7 @@
+package com.blog.app.services;
+
+import com.blog.app.payloads.UserDTO;
+
+public interface UserService {
+	UserDTO createUser(UserDTO user);
+}

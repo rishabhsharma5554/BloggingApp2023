@@ -1,0 +1,14 @@
+package com.blog.app.exceptions;
+
+public class ResourceNotFoundException extends RuntimeException{
+	public String resourceName;
+	public String resourceField;
+	public Long fieldValue;
+	public ResourceNotFoundException(String resourceName, String resourceField, Long fieldValue) {
+		super(String.format("%s not found with this %s : %l", resourceName,resourceField,fieldValue));
+		this.resourceName = resourceName;
+		this.resourceField = resourceField;
+		this.fieldValue = fieldValue;
+	}
+	
+}

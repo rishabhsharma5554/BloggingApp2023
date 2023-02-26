@@ -1,0 +1,5 @@
+package com.blog.app.exceptions;
+
+public class ResourceNotFoundException {
+
+}
