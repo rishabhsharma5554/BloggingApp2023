@@ -3,6 +3,7 @@ package com.blog.app.services.impl;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -17,6 +18,9 @@ public class UserServiceImpl implements UserService {
 
 	@Autowired
 	private UserRepo userRepo;
+	
+	@Autowired
+	private ModelMapper modelMapper;
 	
 	@Override
 	public UserDTO createUser(UserDTO userDTO) {
@@ -45,11 +49,16 @@ public class UserServiceImpl implements UserService {
 	@Override
 	public List<UserDTO> getAllUsers() {
 		List<User> users = this.userRepo.findAll();
-		List<UserDTO> userDTOs = users.stream().map(user -> this.EntityToDTO(user)).collect(Collectors.toList());
 		
-//		List<UserDTO> userDTOs = new ArrayList<>();
-//		for(User u: users)
-//			userDTOs.add(this.EntityToDTO(u));
+		/*
+		old way
+		List<UserDTO> userDTOs = new ArrayList<>();
+		for(User u: users)
+			userDTOs.add(this.EntityToDTO(u));
+		*/
+		
+		//new way using steams api
+		List<UserDTO> userDTOs = users.stream().map(user -> this.EntityToDTO(user)).collect(Collectors.toList());
 		
 		return userDTOs;
 	}
@@ -60,7 +69,28 @@ public class UserServiceImpl implements UserService {
 		this.userRepo.delete(user);
 	}
 	
-	//
+	//convert DTO to Entity using ModelMapper
+	private User dtoToEntity(UserDTO userDTO)
+	{
+		User user = this.modelMapper.map(userDTO, User.class);
+		return user;
+	}
+	
+	//convert Entity to DTO using ModelMapper
+	private UserDTO EntityToDTO(User user)
+	{
+		UserDTO userDTO = this.modelMapper.map(user, UserDTO.class);
+		return userDTO;
+	}
+	
+	/*
+	Manual Things to convert your Entity to DTO 
+	and also it is specific to the User Entity
+	What happens if some new Entity comes? like category, comments
+	do you again create this conversion methods for the same?
+	
+	
+	//Solution - ModelMapper Library
 	private User dtoToEntity(UserDTO userDTO)
 	{
 		User user = new User();
@@ -71,7 +101,7 @@ public class UserServiceImpl implements UserService {
 		user.setEmail(userDTO.getEmail());
 		return user;
 	}
-
+	
 	private UserDTO EntityToDTO(User user)
 	{
 		UserDTO userDTO = new UserDTO();
@@ -82,4 +112,5 @@ public class UserServiceImpl implements UserService {
 		userDTO.setEmail(user.getEmail());
 		return userDTO;
 	}
+	*/
 }
