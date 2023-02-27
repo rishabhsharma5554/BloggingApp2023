@@ -4,6 +4,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
+import org.springframework.web.method.annotation.MethodArgumentTypeMismatchException;
 
 import com.blog.app.payloads.APIResponse;
 
@@ -19,7 +20,7 @@ public class GlobalExceptionHandler {
 	
 	
 	@ExceptionHandler
-	public ResponseEntity<APIResponse> methodArgumentTypeMismatchException(Exception ex)
+	public ResponseEntity<APIResponse> methodArgumentTypeMismatchException(MethodArgumentTypeMismatchException ex)
 	{
 		String errorMsg = ex.getMessage();
 		return new ResponseEntity<>(new APIResponse(errorMsg,false),HttpStatus.INTERNAL_SERVER_ERROR);		

@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
 import com.blog.app.payloads.APIResponse;
 import com.blog.app.payloads.UserDTO;
 import com.blog.app.repos.UserRepo;
