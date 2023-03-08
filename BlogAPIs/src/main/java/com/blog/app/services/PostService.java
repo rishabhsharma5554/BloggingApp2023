@@ -17,7 +17,7 @@ public interface PostService {
 	void deletePost(Integer postId);
 	
 	//get
-	PostResponse getAllPosts(Integer pageNo,Integer pageSize);
+	PostResponse getAllPosts(Integer pageNo,Integer pageSize,String sortBy);
 	
 	//get single Post by id
 	PostDTO getPostById(Integer postId);
@@ -26,7 +26,7 @@ public interface PostService {
 	PostResponse getPostsByCategoryId(Integer catId,Integer pageNo,Integer pageSize);
 	
 	//get All Posts by User id
-	PostResponse getPostsByUserId(Integer userId,Integer pageNo,Integer pageSize);
+	PostResponse getPostsByUserId(Integer userId,Integer pageNo,Integer pageSize,String sortBy,String sortDir);
 	
 	//search posts
 	List<PostDTO> searchPostsByKeyword(String keyword);

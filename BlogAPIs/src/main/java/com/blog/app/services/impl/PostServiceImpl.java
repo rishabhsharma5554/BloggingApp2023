@@ -96,9 +96,9 @@ public class PostServiceImpl implements PostService {
 //	}
 	
 	@Override
-	public PostResponse getAllPosts(Integer pageNo,Integer pageSize) 
+	public PostResponse getAllPosts(Integer pageNo,Integer pageSize,String sortBy) 
 	{
-		Pageable pageable = PageRequest.of(pageNo, pageSize);
+		Pageable pageable = PageRequest.of(pageNo, pageSize,Sort.by(sortBy).descending());
 		Page<Post> pagePost = this.postRepo.findAll(pageable);
 		List<Post> allPost = pagePost.getContent();
 		List<PostDTO> allPostDTO = allPost.stream().map(postDTO -> this.entityToDto(postDTO)).collect(Collectors.toList());
@@ -154,9 +154,19 @@ public class PostServiceImpl implements PostService {
 //	}
 	
 	@Override
-	public PostResponse getPostsByUserId(Integer userId,Integer pageNo,Integer pageSize) {
+	public PostResponse getPostsByUserId(Integer userId,Integer pageNo,Integer pageSize,String sortBy,String sortDir) {
+		
+//		Sort sort = null;
+//		if(sortDir.equalsIgnoreCase("asc"))
+//			sort = Sort.by(sortBy).ascending();
+//		else
+//			sort = Sort.by(sortBy).descending();
+		
+		Sort sort = (sortDir.equalsIgnoreCase("asc")) ? Sort.by(sortBy).ascending():Sort.by(sortBy).descending();
+		Pageable page = PageRequest.of(pageNo, pageSize,sort);
+		
 		User user = this.userRepo.findById(userId).orElseThrow(() -> new ResourceNotFoundException("User","userId",userId));
-		Pageable page = PageRequest.of(pageNo, pageSize);
+		
 		Page<Post> pagePost = this.postRepo.findByUser(user,page);
 		List<PostDTO> allPostDTO = pagePost.stream().map(post -> this.entityToDto(post)).collect(Collectors.toUnmodifiableList());
 		

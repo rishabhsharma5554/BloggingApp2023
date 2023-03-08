@@ -40,9 +40,10 @@ public class PostController {
 	@GetMapping("/posts")
 	public ResponseEntity<PostResponse> getAllPosts(
 			@RequestParam(value = "pageNo",defaultValue = "0",required = false) Integer pageNo,
-			@RequestParam(value = "pageSize",defaultValue = "10",required = false) Integer pageSize)
+			@RequestParam(value = "pageSize",defaultValue = "10",required = false) Integer pageSize,
+			@RequestParam(value = "sortBy",defaultValue = "postId",required = false) String sortBy)
 	{
-		PostResponse postResp = this.postService.getAllPosts(pageNo,pageSize);
+		PostResponse postResp = this.postService.getAllPosts(pageNo,pageSize,sortBy);
 		return new ResponseEntity<>(postResp,HttpStatus.OK);
 	}
 	
@@ -52,9 +53,11 @@ public class PostController {
 	public ResponseEntity<PostResponse> getPostsByUser(
 			@PathVariable Integer userId,
 			@RequestParam(value = "pageNo",defaultValue = "0",required = false) Integer pageNo,
-			@RequestParam(value = "pageSize",defaultValue = "10", required = false)Integer pageSize)
+			@RequestParam(value = "pageSize",defaultValue = "10", required = false)Integer pageSize,
+			@RequestParam(value = "sortBy",defaultValue = "postId",required = false) String sortBy,
+			@RequestParam(value = "sortBy",defaultValue = "asc",required = false) String sortDir)
 	{
-		PostResponse postResp =  this.postService.getPostsByUserId(userId,pageNo,pageSize);
+		PostResponse postResp =  this.postService.getPostsByUserId(userId,pageNo,pageSize,sortBy,sortDir);
 		return new ResponseEntity<>(postResp,HttpStatus.OK);
 	}
 	
