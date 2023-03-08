@@ -38,7 +38,7 @@ public class PostController {
 		return new ResponseEntity<>(createdPost,HttpStatus.CREATED);
 	}
 	
-	//Tested
+	//Pagination Implemented for this
 	@GetMapping("/posts")
 	public ResponseEntity<PostResponse> getAllPosts(
 			@RequestParam(value = "pageNo",defaultValue = "0",required = false) Integer pageNo,
