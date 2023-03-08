@@ -1,0 +1,16 @@
+package com.blog.app.payloads;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class PostResponse {
+
+	private List<PostDTO> content;
+	private Integer pageNo;
+	private Integer pageSize;
+	private Integer totalRecords;
+	private Integer totalPages;
+	private boolean lastPage;
+}
