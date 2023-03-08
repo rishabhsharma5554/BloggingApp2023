@@ -1,5 +1,7 @@
 package com.blog.app.controllers;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -87,6 +89,12 @@ public class PostController {
 		return new ResponseEntity<PostDTO>(postDTO,HttpStatus.OK);
 	}
 	
+	@GetMapping("/posts/search/{keyword}")
+	public ResponseEntity<List<PostDTO>> searchByTitle(@PathVariable("keyword") String key)
+	{
+		List<PostDTO> allDTOPosts = this.postService.searchPostsByKeyword(key);
+		return new ResponseEntity<>(allDTOPosts,HttpStatus.OK);
+	}
 	
 	
 }
