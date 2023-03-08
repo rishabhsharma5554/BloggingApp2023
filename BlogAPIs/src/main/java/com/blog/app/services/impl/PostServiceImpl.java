@@ -7,7 +7,12 @@ import java.util.stream.Collectors;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
+
 
 import com.blog.app.entites.Category;
 import com.blog.app.entites.Post;
@@ -77,10 +82,21 @@ public class PostServiceImpl implements PostService {
 		this.postRepo.delete(post);
 	}
 
+	//commented due to pagination implemented
+//	@Override
+//	public List<PostDTO> getAllPosts() 
+//	{
+//		List<Post> allPost = this.postRepo.findAll();
+//		List<PostDTO> allPostDTO = allPost.stream().map(postDTO -> this.entityToDto(postDTO)).collect(Collectors.toList());
+//		return allPostDTO;
+//	}
+	
 	@Override
-	public List<PostDTO> getAllPosts() 
+	public List<PostDTO> getAllPosts(Integer pageNo,Integer pageSize) 
 	{
-		List<Post> allPost = this.postRepo.findAll();
+		Pageable pageable = PageRequest.of(pageNo, pageSize);
+		Page<Post> pagePost = this.postRepo.findAll(pageable);
+		List<Post> allPost = pagePost.getContent();
 		List<PostDTO> allPostDTO = allPost.stream().map(postDTO -> this.entityToDto(postDTO)).collect(Collectors.toList());
 		return allPostDTO;
 	}
