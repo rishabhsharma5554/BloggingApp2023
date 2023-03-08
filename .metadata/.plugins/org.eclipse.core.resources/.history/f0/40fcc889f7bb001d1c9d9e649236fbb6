@@ -1,0 +1,10 @@
+package com.blog.app.payloads;
+
+import java.util.Date;
+
+public class PostDTO 
+{	
+	private String title;
+	private String content;
+	//pick user id from url
+}

@@ -1,5 +1,7 @@
 package com.blog.app.payloads;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Size;
@@ -22,6 +24,7 @@ public class UserDTO
 	private String email;
 	@NotEmpty
 	private String about;
+	@JsonIgnore
 	@NotEmpty
 	@Size(min=3,max=10,message = "Password must be min 3 and max 10 Characters")
 	private String password;

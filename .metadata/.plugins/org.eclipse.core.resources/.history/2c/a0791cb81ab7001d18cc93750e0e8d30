@@ -1,0 +1,15 @@
+package com.blog.app.services;
+
+import com.blog.app.payloads.CategoryDTO;
+
+public interface CategoryService {
+	//create
+	public CategoryDTO createCategory(CategoryDTO categoryDTO);
+	
+	//update
+	public CategoryDTO updateCategory(CategoryDTO categoryDTO, Integer id);
+	
+	//get
+	//getAll
+	
+}

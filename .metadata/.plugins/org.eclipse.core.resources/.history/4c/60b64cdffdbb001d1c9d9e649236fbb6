@@ -1,0 +1,108 @@
+package com.blog.app.services.impl;
+
+import java.util.Date;
+import java.util.List;
+
+import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.blog.app.entites.Category;
+import com.blog.app.entites.Post;
+import com.blog.app.entites.User;
+import com.blog.app.exceptions.ResourceNotFoundException;
+import com.blog.app.payloads.PostDTO;
+import com.blog.app.repos.CategoryRepo;
+import com.blog.app.repos.PostRepo;
+import com.blog.app.repos.UserRepo;
+import com.blog.app.services.PostService;
+
+@Service
+public class PostServiceImpl implements PostService {
+
+	
+	@Autowired
+	private PostRepo postRepo;
+	
+	@Autowired 
+	private ModelMapper modelMapper;
+	
+	@Autowired
+	private UserRepo userRepo;
+	
+	@Autowired
+	private CategoryRepo catRepo;
+	
+	private Post dtotoEntity(PostDTO postDTO)
+	{
+		Post post = this.modelMapper.map(postDTO, Post.class);
+		return post;
+	}
+	
+	private PostDTO entityToDto(Post post)
+	{
+		PostDTO postDTO = this.modelMapper.map(post, PostDTO.class);
+		return postDTO;
+	}
+	
+	
+	@Override
+	public PostDTO createPost(PostDTO postDTO,Integer userId,Integer catId) {
+		User user = this.userRepo.findById(userId).orElseThrow(() -> new ResourceNotFoundException("User id", " id ", catId));
+		Category category = this.catRepo.findById(catId).orElseThrow(() -> new ResourceNotFoundException("Category", "CategoryId", catId));
+		Post post = this.dtotoEntity(postDTO);
+		post.setUser(user);
+		post.setCategory(category);
+		post.setImageName("default.jpeg");
+		post.setAddedDate(new Date());
+		this.postRepo.save(post);
+		
+		
+		return this.entityToDto(post);
+	}
+
+	@Override
+	public Post updatePost(PostDTO postDTO, Integer postId) {
+		Post post = this.postRepo.findById(postId).get();
+		post.setTitle(postDTO.getTitle());
+		post.setContent(postDTO.getContent());
+		return this.postRepo.save(post);
+	}
+
+	@Override
+	public void deletePost(Integer postId) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public List<Post> getAllPosts() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Post getPostById(Integer postId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Post> getPostsByCategoryId(Integer catId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<User> getPostsByUserId(Integer userId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Post> searchPostsByKeyword(String keyword) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

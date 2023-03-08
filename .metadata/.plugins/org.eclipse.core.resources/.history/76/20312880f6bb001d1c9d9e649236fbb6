@@ -1,0 +1,60 @@
+package com.blog.app.services.impl;
+
+import java.util.List;
+
+import com.blog.app.entites.Post;
+import com.blog.app.entites.User;
+import com.blog.app.payloads.PostDTO;
+import com.blog.app.services.PostService;
+
+public class PostServiceImpl implements PostService {
+
+	@Override
+	public Post createPost(PostDTO postDTO) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Post updatePost(PostDTO postDTO, Integer postId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void deletePost(Integer postId) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public List<Post> getAllPosts() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Post getPostById(Integer postId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Post> getPostsByCategoryId(Integer catId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<User> getPostsByUserId(Integer userId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Post> searchPostsByKeyword(String keyword) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

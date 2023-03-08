@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<typeInfoHistroy/>
+<typeInfoHistroy>
+    <typeInfo handle="=BlogAPIs/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.blog.app.services{UserService.java[UserService" modifiers="513" timestamp="1677288666384"/>
+    <typeInfo handle="=BlogAPIs/C:\/Users\/risha\/.m2\/repository\/org\/springframework\/data\/spring-data-jpa\/3.0.2\/spring-data-jpa-3.0.2.jar=/maven.pomderived=/true=/=/maven.groupId=/org.springframework.data=/=/maven.artifactId=/spring-data-jpa=/=/maven.version=/3.0.2=/=/maven.scope=/compile=/=/maven.pomderived=/true=/&lt;org.springframework.data.jpa.repository(JpaRepository.class[JpaRepository" modifiers="1537" timestamp="1677227358099"/>
+    <typeInfo handle="=BlogAPIs/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.blog.app.services{CategoryService.java[CategoryService" modifiers="513" timestamp="1677556176113"/>
+</typeInfoHistroy>

@@ -1,0 +1,5 @@
+package com.blog.app.controllers;
+
+public class PostController {
+
+}
