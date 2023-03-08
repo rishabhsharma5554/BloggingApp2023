@@ -1,7 +1,5 @@
 package com.blog.app.controllers;
 
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -51,21 +49,24 @@ public class PostController {
 	
 	//tested
 	@GetMapping("/user/{userId}/posts")
-	public ResponseEntity<List<PostDTO>> getPostsByUser(
-			@PathVariable Integer userId)
+	public ResponseEntity<PostResponse> getPostsByUser(
+			@PathVariable Integer userId,
+			@RequestParam(value = "pageNo",defaultValue = "0",required = false) Integer pageNo,
+			@RequestParam(value = "pageSize",defaultValue = "10", required = false)Integer pageSize)
 	{
-		List<PostDTO> allPosts = this.postService.getPostsByUserId(userId);
-		return new ResponseEntity<List<PostDTO>>(allPosts,HttpStatus.OK);
-		
+		PostResponse postResp =  this.postService.getPostsByUserId(userId,pageNo,pageSize);
+		return new ResponseEntity<>(postResp,HttpStatus.OK);
 	}
 	
 	//tested
 	@GetMapping("/category/{catId}/posts")
-	public ResponseEntity<List<PostDTO>> getPostsByCategory(
-			@PathVariable Integer catId)
+	public ResponseEntity<PostResponse> getPostsByCategory(
+			@PathVariable Integer catId,
+			@RequestParam(value = "pageNo",defaultValue = "0",required = false) Integer pageNo,
+			@RequestParam(value = "pageSize",defaultValue = "10", required = false)Integer pageSize)
 	{
-		List<PostDTO> allPosts = this.postService.getPostsByCategoryId(catId);
-		return new ResponseEntity<List<PostDTO>>(allPosts,HttpStatus.OK);
+		PostResponse postResp = this.postService.getPostsByCategoryId(catId,pageNo,pageSize);
+		return new ResponseEntity<>(postResp,HttpStatus.OK);
 		
 	}
 	

@@ -43,4 +43,12 @@ public class GlobalExceptionHandler {
 		});
 		return new ResponseEntity<>(resp,HttpStatus.BAD_REQUEST);
 	}
+	
+	//Page size exception must not be less than 0
+	@ExceptionHandler(IllegalArgumentException.class)
+	public ResponseEntity<APIResponse> handleIllegalArgumentException(IllegalArgumentException ex)
+	{
+		String errorMsg = ex.getMessage();
+		return new ResponseEntity<>(new APIResponse(errorMsg,false),HttpStatus.INTERNAL_SERVER_ERROR);	
+	}
 }

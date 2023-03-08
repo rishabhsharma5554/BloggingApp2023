@@ -41,6 +41,9 @@ public class PostServiceImpl implements PostService {
 	@Autowired
 	private CategoryRepo catRepo;
 	
+	@Autowired
+	private PostResponse postResponse;
+	
 	private Post dtotoEntity(PostDTO postDTO)
 	{
 		Post post = this.modelMapper.map(postDTO, Post.class);
@@ -115,21 +118,56 @@ public class PostServiceImpl implements PostService {
 		Post post = this.postRepo.findById(postId).orElseThrow(()->new ResourceNotFoundException("Post", "Post Id", postId));
 		return this.entityToDto(post);
 	}
-
+//	commented due to pagination implemented
+//	@Override
+//	public List<PostDTO> getPostsByCategoryId(Integer catId) {
+//		
+//		Category cat = this.catRepo.findById(catId).orElseThrow(() -> new ResourceNotFoundException("Category", "category id", catId));
+//		List<Post> allPosts = this.postRepo.findByCategory(cat);
+//		return allPosts.stream().map(post -> this.entityToDto(post)).collect(Collectors.toUnmodifiableList());
+//	}
+	
 	@Override
-	public List<PostDTO> getPostsByCategoryId(Integer catId) {
-		
+	public PostResponse getPostsByCategoryId(Integer catId,Integer pageNo,Integer pageSize)
+	{
 		Category cat = this.catRepo.findById(catId).orElseThrow(() -> new ResourceNotFoundException("Category", "category id", catId));
-		List<Post> allPosts = this.postRepo.findByCategory(cat);
-		return allPosts.stream().map(post -> this.entityToDto(post)).collect(Collectors.toUnmodifiableList());
+		Pageable page = PageRequest.of(pageNo, pageSize);
+		Page<Post> allPostInPage = this.postRepo.findByCategory(cat,page);
+		List<PostDTO> allPostsDTO =  allPostInPage.stream().map(post -> this.entityToDto(post)).collect(Collectors.toUnmodifiableList());
+		
+		this.postResponse.setContent(allPostsDTO);
+		this.postResponse.setLastPage(allPostInPage.isLast());
+		this.postResponse.setPageNo(pageNo);
+		this.postResponse.setPageSize(pageSize);
+		this.postResponse.setTotalPages(allPostInPage.getTotalPages());
+		this.postResponse.setTotalRecords(allPostInPage.getTotalElements());
+		
+		return this.postResponse;
 	}
-
+	//commented due to pagination implemented
+//	@Override
+//	public List<PostDTO> getPostsByUserId(Integer userId) {
+//		User user = this.userRepo.findById(userId).orElseThrow(() -> new ResourceNotFoundException("User","userId",userId));
+//		List<Post> allPosts = this.postRepo.findByUser(user);
+//		List<PostDTO> allPostsByUserid = allPosts.stream().map(post -> this.entityToDto(post)).collect(Collectors.toUnmodifiableList());
+//		return allPostsByUserid;
+//	}
+	
 	@Override
-	public List<PostDTO> getPostsByUserId(Integer userId) {
+	public PostResponse getPostsByUserId(Integer userId,Integer pageNo,Integer pageSize) {
 		User user = this.userRepo.findById(userId).orElseThrow(() -> new ResourceNotFoundException("User","userId",userId));
-		List<Post> allPosts = this.postRepo.findByUser(user);
-		List<PostDTO> allPostsByUserid = allPosts.stream().map(post -> this.entityToDto(post)).collect(Collectors.toUnmodifiableList());
-		return allPostsByUserid;
+		Pageable page = PageRequest.of(pageNo, pageSize);
+		Page<Post> pagePost = this.postRepo.findByUser(user,page);
+		List<PostDTO> allPostDTO = pagePost.stream().map(post -> this.entityToDto(post)).collect(Collectors.toUnmodifiableList());
+		
+		this.postResponse.setContent(allPostDTO);
+		this.postResponse.setLastPage(pagePost.isLast());
+		this.postResponse.setPageNo(pageNo);
+		this.postResponse.setPageSize(pageSize);
+		this.postResponse.setTotalPages(pagePost.getTotalPages());
+		this.postResponse.setTotalRecords(pagePost.getTotalElements());
+		
+		return this.postResponse;
 	}
 
 	@Override
