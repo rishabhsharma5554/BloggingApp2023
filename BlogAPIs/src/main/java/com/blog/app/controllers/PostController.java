@@ -1,8 +1,12 @@
 package com.blog.app.controllers;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.List;
+import java.util.concurrent.CompletableFuture;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -14,11 +18,16 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-
+import org.springframework.web.multipart.MultipartFile;
+import org.springframework.http.MediaType;
+import org.springframework.util.StreamUtils;
 import com.blog.app.payloads.APIResponse;
 import com.blog.app.payloads.PostDTO;
 import com.blog.app.payloads.PostResponse;
+import com.blog.app.services.FileService;
 import com.blog.app.services.PostService;
+
+import jakarta.servlet.http.HttpServletResponse;
 
 @RestController
 @RequestMapping("/api/")
@@ -26,6 +35,12 @@ public class PostController {
 	
 	@Autowired
 	private PostService postService;
+	
+	@Autowired
+	private FileService fileService;
+	
+	@Value("${project.image}")
+	private String path;
 	
 	//Tested
 	@PostMapping("/user/{userId}/category/{categoryId}/posts")
@@ -96,5 +111,52 @@ public class PostController {
 		return new ResponseEntity<>(allDTOPosts,HttpStatus.OK);
 	}
 	
+	//post image upload
+	
+//	@PostMapping("/posts/image/upload/{postId}")
+//	public ResponseEntity<PostDTO> uploadImage(
+//			@PathVariable Integer postId,
+//			@RequestParam("image") MultipartFile imageFile) throws IOException
+//	{
+//		
+//		PostDTO postById = this.postService.getPostById(postId);
+//		String fileName = this.fileService.uploadImage(path, imageFile);
+//		
+//		postById.setImageName(fileName);
+//		PostDTO updatedPost = this.postService.updatePost(postById, postId);
+//		return new ResponseEntity<PostDTO>(updatedPost,HttpStatus.OK);
+//	}
+	
+	//Async call for large data 
+	@PostMapping("/posts/image/upload/{postId}")
+	public CompletableFuture<PostDTO> uploadImageAsync(
+	    @PathVariable Integer postId,
+	    @RequestParam("image") MultipartFile imageFile) {
+
+	    return CompletableFuture.supplyAsync(() -> {
+	        PostDTO postById = postService.getPostById(postId);
+	        String fileName = null;
+			try 
+			{
+				fileName = fileService.uploadImage(path, imageFile);
+			} 
+			catch (IOException e) 
+			{
+				e.printStackTrace();
+			}
+	        postById.setImageName(fileName);
+	        PostDTO updatedPost = postService.updatePost(postById, postId);
+	        return updatedPost;
+	    });
+	}
+	
+	@GetMapping(value ="/posts/image/{imageName}",produces = MediaType.IMAGE_JPEG_VALUE )
+	public void downloadIamge(@PathVariable("imageName") String imageName,
+			HttpServletResponse response) throws IOException
+	{
+		InputStream resource =  this.fileService.getResource(path, imageName);
+		response.setContentType(MediaType.IMAGE_JPEG_VALUE);
+		StreamUtils.copy(resource, response.getOutputStream());
+	}
 	
 }

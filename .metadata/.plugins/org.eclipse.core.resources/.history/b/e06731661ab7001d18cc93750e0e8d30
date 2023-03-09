@@ -1,7 +1,0 @@
-package com.blog.app.repos;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-
-public interface CategoryRepo extends JpaRepository<T, ID> {
-
-}
