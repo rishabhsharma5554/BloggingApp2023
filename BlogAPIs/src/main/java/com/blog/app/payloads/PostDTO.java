@@ -1,6 +1,7 @@
 package com.blog.app.payloads;
 
 import java.util.Date;
+import java.util.List;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -23,4 +24,5 @@ public class PostDTO
 	private CategoryDTO category;
 	
 	//pick user id from url
+	private List<CommentDTO> comments;
 }
