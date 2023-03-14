@@ -19,10 +19,4 @@ public class BlogApIsApplication {
 	{
 		return new ModelMapper();
 	}
-	
-//	@Bean
-//	public PostResponse getPostResponse()
-//	{
-//		return new PostResponse();
-//	}
 }
