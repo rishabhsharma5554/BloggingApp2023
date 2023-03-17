@@ -8,8 +8,8 @@
 <system systemId="http://maven.apache.org/xsd/archetype-1.0.0.xsd" uri="file:///C:/sts-4.15.3.RELEASE/configuration/org.eclipse.osgi/341/0/.cp/xsd/archetype-1.0.0.xsd"/>
 <system systemId="http://maven.apache.org/xsd/archetype-catalog-1.0.0.xsd" uri="file:///C:/sts-4.15.3.RELEASE/configuration/org.eclipse.osgi/341/0/.cp/xsd/archetype-catalog-1.0.0.xsd"/>
 <system systemId="http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd" uri="file:///C:/sts-4.15.3.RELEASE/configuration/org.eclipse.osgi/341/0/.cp/xsd/archetype-descriptor-1.0.0.xsd"/>
-<uri name="http://www.w3.org/2001/XMLSchema" uri="file:///C:/sts-4.15.3.RELEASE/configuration/org.eclipse.osgi/493/0/.cp/cache/www.w3.org/2001/XMLSchema.xsd"/>
-<system systemId="http://www.w3.org/2001/xml.xsd" uri="file:///C:/sts-4.15.3.RELEASE/configuration/org.eclipse.osgi/493/0/.cp/cache/www.w3.org/2001/xml.xsd"/>
+<uri name="http://www.w3.org/2001/XMLSchema" uri="file:///C:/sts-4.15.3.RELEASE/configuration/org.eclipse.osgi/1082/0/.cp/cache/www.w3.org/2001/XMLSchema.xsd"/>
+<system systemId="http://www.w3.org/2001/xml.xsd" uri="file:///C:/sts-4.15.3.RELEASE/configuration/org.eclipse.osgi/1082/0/.cp/cache/www.w3.org/2001/xml.xsd"/>
 <public publicId="-//LOG4J//DTD LOG4J//EN" uri="file:///C:/sts-4.15.3.RELEASE/configuration/org.eclipse.osgi/581/0/.cp/dtd/log4j-1.2.dtd"/>
 <uri name="http://www.eclipse.org/eclipselink/xsds/eclipselink_orm_1_0.xsd" uri="file:///C:/sts-4.15.3.RELEASE/configuration/org.eclipse.osgi/691/0/.cp/schemas/eclipselink_orm_1_0.xsd"/>
 <uri name="http://www.eclipse.org/eclipselink/xsds/eclipselink_orm_1_1.xsd" uri="file:///C:/sts-4.15.3.RELEASE/configuration/org.eclipse.osgi/691/0/.cp/schemas/eclipselink_orm_1_1.xsd"/>
@@ -227,4 +227,8 @@
 <uri name="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200802" uri="file:///C:/sts-4.15.3.RELEASE/configuration/org.eclipse.osgi/845/0/.cp/xsd/ws-securitypolicy.xsd"/>
 <uri name="http://www.w3.org/TR/xmldsig-core/xmldsig-core-schema.xsd" uri="file:///C:/sts-4.15.3.RELEASE/configuration/org.eclipse.osgi/845/0/.cp/xsd/xmldsig-core-schema.xsd"/>
 <uri name="http://www.w3.org/2001/XInclude" uri="file:///C:/sts-4.15.3.RELEASE/configuration/org.eclipse.osgi/875/0/.cp/xslt-schemas/xinclude.xsd"/>
+<public publicId="-//Hibernate/Hibernate Mapping DTD 3.0//EN" uri="file:///C:/sts-4.15.3.RELEASE/plugins/org.hibernate.eclipse.mapper_5.4.17.v20220415-1224/dtd/hibernate-mapping-3.0.dtd"/>
+<public publicId="-//Hibernate/Hibernate Configuration DTD 3.0//EN" uri="file:///C:/sts-4.15.3.RELEASE/plugins/org.hibernate.eclipse.mapper_5.4.17.v20220415-1224/dtd/hibernate-configuration-3.0.dtd"/>
+<public publicId="-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" uri="file:///C:/sts-4.15.3.RELEASE/plugins/org.hibernate.eclipse.mapper_5.4.17.v20220415-1224/dtd/hibernate-reverse-engineering-3.0.dtd"/>
+<public publicId="-//Red Hat, Inc.//DTD Meta 1.0//EN" uri="file:///C:/sts-4.15.3.RELEASE/plugins/org.jboss.tools.common.model_3.17.300.v20220519-0955/schema/meta.dtd"/>
 </catalog>
