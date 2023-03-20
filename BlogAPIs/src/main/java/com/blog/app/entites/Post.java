@@ -6,6 +6,7 @@ import java.util.List;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -45,6 +46,6 @@ public class Post {
 	private User user;
 	
 	//post = name of ref in Comment Entity
-	@OneToMany(mappedBy = "post",cascade = CascadeType.ALL)
+	@OneToMany(mappedBy = "post",cascade = CascadeType.ALL,fetch = FetchType.EAGER)
 	private List<Comment> comments;
 }
